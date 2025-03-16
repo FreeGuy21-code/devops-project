@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My DevOps Project</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-        h1 { color: blue; }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to My DevOps Project!</h1>
-    <p>This page is hosted on Render and deployed using GitHub Actions.</p>
+    <header>
+        <h1>Welcome to My DevOps Project 🚀</h1>
+    </header>
+    <section>
+        <p>This website is automatically deployed using <strong>GitHub Actions</strong> and <strong>Render</strong>.</p>
+        <p>Every time we update our code, the changes go live automatically!</p>
+        <button onclick="showAlert()">Click Me!</button>
+    </section>
+    <footer>
+        <p>&copy; 2025 DevOps Project. All rights reserved.</p>
+    </footer>
+    <script>
+        function showAlert() {
+            alert("This website is running with CI/CD automation!");
+        }
+    </script>
 </body>
 </html>
+
