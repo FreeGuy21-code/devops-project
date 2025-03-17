@@ -53,6 +53,7 @@ h1 {
     color: #f4a261;
 }
 
+/* Button Styling */
 button {
     background-color: #f4a261;
     color: #121212;
@@ -67,6 +68,25 @@ button {
 button:hover {
     background-color: #e76f51;
     color: white;
+}
+
+/* Message Styling */
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f4a261;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+/* Animation */
+.fade-in {
+    opacity: 1 !important;
 }
 
 /* About Section */
