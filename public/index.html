@@ -21,16 +21,34 @@
     <header>
         <h1>Welcome to My DevOps Project 🚀</h1>
         <p>This website is automatically deployed using <strong>GitHub Actions</strong> and <strong>Render</strong>.</p>
-        <button onclick="showAlert()">Click Me!</button>
+        <button onclick="showMessage()">Click Me!</button>
+        <p id="message" class="hidden"></p> <!-- The message will appear here -->
     </header>
 
     <!-- About Section -->
     <section class="about">
         <h2>About This Project</h2>
-        <p>This project demonstrates how to set up **Continuous Deployment (CD)** using GitHub Actions and Render.</p>
+        <p>This project demonstrates how to set up <strong>Continuous Deployment (CD)</strong> using GitHub Actions and Render.</p>
         <p>Every time we push changes to GitHub, the website updates automatically.</p>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 D
+        <p>&copy; 2025 DevOps Project. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+        </div>
+    </footer>
+
+    <script>
+        function showMessage() {
+            let message = document.getElementById("message");
+            message.innerHTML = "This project is developed by us!";
+            message.classList.remove("hidden"); // Make it visible
+            message.classList.add("fade-in"); // Apply animation
+        }
+    </script>
+</body>
+</html>
